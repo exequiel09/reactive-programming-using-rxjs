@@ -1,0 +1,17 @@
+// Working example at: http://jsbin.com/qogamopome/edit?js,console,output
+
+// get the reference to the element
+const btn = document.querySelector('#btn');
+
+// listen to click events on the button element
+const clickStream$ = Rx.Observable.fromEvent(btn, 'click').throttleTime(100);
+
+// transform the stream to get only double clicks
+const doubleClickStream$ = clickStream$
+    .buffer(clickStream$.auditTime(200)) // buffer all clicks and get all clicks that happen within 200ms
+    .map(x => x.length)                  // get the number of buffered items
+    .filter(x => (x >= 2))               // get clicks that occured two times or more
+    ;
+
+// subscribe to the observable / stream
+doubleClickStream$.subscribe(data => console.log("double click"));

@@ -16,6 +16,9 @@ import {
   Text
 } from "spectacle";
 
+// Import Spectacle Code Slide tag
+import CodeSlide from 'spectacle-code-slide';
+
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
 
@@ -152,6 +155,18 @@ export default class Presentation extends React.Component {
             </Appear>
           </List>
         </Slide>
+
+        <CodeSlide
+          transition={[]}
+          lang="js"
+          code={require("raw-loader!../assets/codes/what-is-reactive-programming/double-click-stream.js.example")}
+          ranges={[
+            { loc: [0, 18], title: "Double click stream" },
+            { loc: [2, 4], note: "Get the reference on the button element" },
+            { loc: [5, 7], note: "Create a stream of events based on the button clicks" },
+            { loc: [8, 14], note: "Modify the stream to get only double clicks" },
+            { loc: [15, 17], note: "Subscribe double click stream" }
+          ]} />
 
         {/* [What is Reactive Programming?] ::end */}
 
