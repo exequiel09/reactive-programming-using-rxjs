@@ -33,6 +33,11 @@ const images = {
   // [Reactive Programming] ::start
   dataStream: require("../assets/img/what-is-reactive-programming/data-stream.png"),
   // [Reactive Programming] ::end
+
+  // [Promises vs Observables] ::start
+  dataComparison: require("../assets/img/promises-vs-observables/reactive-chart.jpg"),
+  benLesh: require("../assets/img/promises-vs-observables/ben-lesh-observables-promises.png")
+  // [Promises vs Observables] ::end
 };
 
 preloader(images);
@@ -322,6 +327,32 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         {/* [Observables deep dive] ::end */}
+
+        {/* [Promises vs Observables] ::start */}
+        <Slide transition={[]} bgColor="tertiary" textColor="primary">
+          <Heading size={1} caps fit lineHeight={1} textColor="primary">
+            Promise vs Observables
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Comparison Chart
+          </Heading>
+
+          <Image src={images.dataComparison.replace("/", "")} margin="30px auto 0" width="700px" />
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            When to use Observables over Promise?
+          </Heading>
+
+          <Appear fid="25">
+            <Image src={images.benLesh.replace("/", "")} margin="30px auto 0" width="700px" />
+          </Appear>
+        </Slide>
+        {/* [Promises vs Observables] ::end */}
 
       </Deck>
     );
