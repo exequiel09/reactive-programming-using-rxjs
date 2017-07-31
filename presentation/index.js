@@ -170,6 +170,103 @@ export default class Presentation extends React.Component {
 
         {/* [What is Reactive Programming?] ::end */}
 
+        {/* [What is RxJS?] ::start */}
+        <Slide transition={[]} bgColor="tertiary" textColor="primary">
+          <Heading size={1} caps lineHeight={1} textColor="primary">
+            RxJS
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="15">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              What is RxJS?
+            </Heading>
+          </Appear>
+
+          <Appear fid="16">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              RxJS is a javascript library that brings the concept of "reactive programming" to the web.
+            </Text>
+          </Appear>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Text textColor="primary" size={1}>
+            In RxJS, you represent asynchronous data streams using observable sequences or also just called observables.
+            Observables are very flexible and can be used using push or pull patterns.
+          </Text>
+        </Slide>
+
+        <Slide transition={[]} bgColor="tertiary" textColor="primary">
+          <Heading size={1} caps fit lineHeight={1} textColor="primary">
+            Definition of Terms
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="17">
+            <Heading size={1} caps lineHeight={1} textColor="primary">
+              Observer
+            </Heading>
+          </Appear>
+
+          <Appear fid="18">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              Observes something that can be observed
+            </Text>
+          </Appear>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="19">
+            <Heading size={1} caps lineHeight={1} textColor="primary">
+              Observable
+            </Heading>
+          </Appear>
+
+          <Appear fid="20">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              Observable is a function which accepts an observer and call handlers defined on the observer and returns a function.
+            </Text>
+          </Appear>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="21">
+            <Heading size={1} caps lineHeight={1} textColor="primary">
+              Subject
+            </Heading>
+          </Appear>
+
+          <Appear fid="22">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              Simply both an Observer and Observable
+            </Text>
+          </Appear>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="23">
+            <Heading size={1} caps lineHeight={1} textColor="primary">
+              Operators
+            </Heading>
+          </Appear>
+
+          <Appear fid="24">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              Are methods on the Observable type or class and does not modify the existing observable. Instead the return new instance of observable.
+            </Text>
+          </Appear>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Text textColor="primary" size={6}>
+            Enough talk! Let's hurry up and go deep dive with Observables, shall we?
+          </Text>
+        </Slide>
+        {/* [What is RxJS?] ::end */}
+
       </Deck>
     );
   }
