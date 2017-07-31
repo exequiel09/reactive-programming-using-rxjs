@@ -267,6 +267,62 @@ export default class Presentation extends React.Component {
         </Slide>
         {/* [What is RxJS?] ::end */}
 
+        {/* [Observables deep dive] ::start */}
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Text textColor="primary" size={6}>
+            Let's create Observables
+          </Text>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Demo Time
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Text textColor="primary" size={6}>
+            Now let's jump into the operators
+          </Text>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="primary" textColor="tertiary">
+          <Text size={6}>
+            We will discuss these operators:
+          </Text>
+
+          <List>
+            <ListItem>map</ListItem>
+            <ListItem>filter</ListItem>
+            <ListItem>take</ListItem>
+            <ListItem>merge</ListItem>
+            <ListItem>concat</ListItem>
+            <ListItem>forkJoin</ListItem>
+            <ListItem>combineLatest</ListItem>
+            <ListItem>mergeMap / flatMap</ListItem>
+            <ListItem>switchMap</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Demo Time
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="tertiary">
+          <Text textColor="primary" size={6}>
+            Remember the demo last meetup? We'll convert that into promise and async/await - based code to Observables.
+          </Text>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Demo Time
+          </Heading>
+        </Slide>
+        {/* [Observables deep dive] ::end */}
+
       </Deck>
     );
   }
