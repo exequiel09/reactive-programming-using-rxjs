@@ -354,6 +354,12 @@ export default class Presentation extends React.Component {
         </Slide>
         {/* [Promises vs Observables] ::end */}
 
+        <Slide transition={[]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Thank you!
+          </Heading>
+        </Slide>
+
       </Deck>
     );
   }
