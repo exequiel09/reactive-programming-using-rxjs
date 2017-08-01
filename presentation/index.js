@@ -4,20 +4,17 @@ import React from "react";
 // Import Spectacle Core tags
 import {
   Appear,
-  BlockQuote,
-  Cite,
   Deck,
   Heading,
   Image,
   ListItem,
   List,
-  Quote,
   Slide,
   Text
 } from "spectacle";
 
 // Import Spectacle Code Slide tag
-import CodeSlide from 'spectacle-code-slide';
+import CodeSlide from "spectacle-code-slide";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
