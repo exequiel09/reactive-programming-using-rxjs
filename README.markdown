@@ -2,7 +2,7 @@
 
 ## Requirements
 
-1. Node.js 6.9.x or greater
+1. Node.js 6.10.x or greater
 2. Internet connection for Google Fonts
 
 ## Installing dependencies
@@ -23,3 +23,5 @@ This will spawn a server and will be accessible at [http://localhost:3001](http:
 Building the dist version of the project is as easy as running `npm run build`
 
 If you want to deploy the slideshow to surge, run `npm run deploy`
+
+
