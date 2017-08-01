@@ -33,8 +33,15 @@ const images = {
 
   // [Promises vs Observables] ::start
   dataComparison: require("../assets/img/promises-vs-observables/reactive-chart.jpg"),
-  benLesh: require("../assets/img/promises-vs-observables/ben-lesh-observables-promises.png")
+  benLesh: require("../assets/img/promises-vs-observables/ben-lesh-observables-promises.png"),
   // [Promises vs Observables] ::end
+
+  // [GIFs] ::start
+  dogWhat: require("../assets/img/giphy/dog-what.gif"),
+  anotherOne: require("../assets/img/giphy/another-one.gif"),
+  manWow: require("../assets/img/giphy/man-wow.gif"),
+  mindBlown: require("../assets/img/giphy/mind-blown.gif")
+  // [GIFs] ::end
 };
 
 preloader(images);
@@ -84,8 +91,14 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
+        <Slide transition={["slide"]} bgImage={images.dogWhat.replace("/", "")} bgDarken={0.25}>
+          <Heading size={1} fit lineHeight={1} textColor="primary">
+            WTH is asynchronous data streams?
+          </Heading>
+        </Slide>
+
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Asynchronous data streams?</Heading>
+          <Heading size={6} textColor="secondary" caps>Asynchronous data streams</Heading>
 
           <List>
             <Appear fid="3">
@@ -179,14 +192,22 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
-        <Slide transition={[]} bgColor="secondary" textColor="primary">
+        <Slide transition={["slide"]} bgImage={images.anotherOne.replace("/", "")} bgDarken={0.25}>
           <Appear fid="15">
+            <Heading size={1} fit lineHeight={1} textColor="primary">
+              Another JavaScript Library?
+            </Heading>
+          </Appear>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="16">
             <Heading size={1} fit caps lineHeight={1} textColor="primary">
               What is RxJS?
             </Heading>
           </Appear>
 
-          <Appear fid="16">
+          <Appear fid="17">
             <Text margin="10px 0 0" textColor="primary" size={1}>
               RxJS is a javascript library that brings the concept of "reactive programming" to the web.
             </Text>
@@ -207,13 +228,13 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={[]} bgColor="secondary" textColor="primary">
-          <Appear fid="17">
+          <Appear fid="18">
             <Heading size={1} caps lineHeight={1} textColor="primary">
               Observer
             </Heading>
           </Appear>
 
-          <Appear fid="18">
+          <Appear fid="19">
             <Text margin="10px 0 0" textColor="primary" size={1}>
               Observes something that can be observed
             </Text>
@@ -221,13 +242,13 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={[]} bgColor="secondary" textColor="primary">
-          <Appear fid="19">
+          <Appear fid="20">
             <Heading size={1} caps lineHeight={1} textColor="primary">
               Observable
             </Heading>
           </Appear>
 
-          <Appear fid="20">
+          <Appear fid="21">
             <Text margin="10px 0 0" textColor="primary" size={1}>
               Observable is a function which accepts an observer and call handlers defined on the observer and returns a function.
             </Text>
@@ -235,13 +256,13 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={[]} bgColor="secondary" textColor="primary">
-          <Appear fid="21">
+          <Appear fid="22">
             <Heading size={1} caps lineHeight={1} textColor="primary">
               Subject
             </Heading>
           </Appear>
 
-          <Appear fid="22">
+          <Appear fid="23">
             <Text margin="10px 0 0" textColor="primary" size={1}>
               Simply both an Observer and Observable
             </Text>
@@ -249,13 +270,13 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={[]} bgColor="secondary" textColor="primary">
-          <Appear fid="23">
+          <Appear fid="24">
             <Heading size={1} caps lineHeight={1} textColor="primary">
               Operators
             </Heading>
           </Appear>
 
-          <Appear fid="24">
+          <Appear fid="25">
             <Text margin="10px 0 0" textColor="primary" size={1}>
               Are methods on the Observable type or class and does not modify the existing observable. Instead the return new instance of observable.
             </Text>
@@ -279,6 +300,12 @@ export default class Presentation extends React.Component {
         <Slide transition={[]} bgColor="secondary" textColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Demo Time
+          </Heading>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.manWow.replace("/", "")} bgDarken={0.25}>
+          <Heading size={1} fit lineHeight={1} textColor="primary">
+            Observables is awesome
           </Heading>
         </Slide>
 
@@ -309,6 +336,12 @@ export default class Presentation extends React.Component {
         <Slide transition={[]} bgColor="secondary" textColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Demo Time
+          </Heading>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.mindBlown.replace("/", "")} bgDarken={0.25}>
+          <Heading size={1} fit lineHeight={1} textColor="primary">
+            Now you're mind blown?
           </Heading>
         </Slide>
 
@@ -345,7 +378,7 @@ export default class Presentation extends React.Component {
             When to use Observables over Promise?
           </Heading>
 
-          <Appear fid="25">
+          <Appear fid="26">
             <Image src={images.benLesh.replace("/", "")} margin="30px auto 0" width="700px" />
           </Appear>
         </Slide>
